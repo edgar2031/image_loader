@@ -1,0 +1,15 @@
+# Deny access to sensitive files
+<FilesMatch "^\.">
+    Require all denied
+</FilesMatch>
+
+# Enable URL rewriting if needed
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+</IfModule>
+
+# Set default charset
+AddDefaultCharset UTF-8
+
+# Prevent directory listing
+Options -Indexes

@@ -1,0 +1,5 @@
+# Ignore processed images (user-generated content)
+/processed/*
+
+# But keep the directory itself
+!/processed/.gitkeep
